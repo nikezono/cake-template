@@ -1,31 +1,10 @@
-node-combine-rss
+cake-template
 ---
 
-combine rss feeds in url
+cakeのテンプレートです
 
-input multiple rss feeds, then output single xml url
+    npm install: mocha,coffeescript,assertをインストール
+    npm test   : test/test.coffeeを実行
+    npm compile: src/*.coffeeを変更を検知してlib/*.jsにコンパイル
 
-combined rss object can deal like below.
-
-##install
-
-***using npm:***
-
-    npm install combine-rss
-
-****or using package.json:***
-
-    "combine-rss": "*"
-
-##usage
-    # Coffeescript
-    finder = require 'find-rss'
-    finder "http://www.apple.com/",(candidates)->
-      console.log candidates
-
-      # =>
-      # [ { rel: 'alternate',
-            type: 'application/rss+xml',
-            title: 'RSS',
-            href: 'http://images.apple.com/main/rss/hotnews/hotnews.rss',
-            url: 'http://images.apple.com/main/rss/hotnews/hotnews.rss' } ]
+.travis.ymlもついてます
